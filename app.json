@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "GoHighLevel",
+    "slug": "gohighlevel-mobile",
+    "version": "1.0.0",
+    "orientation": "default",
+    "userInterfaceStyle": "dark",
+    "scheme": "gohighlevel",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jaywestmarketing.gohighlevel",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Camera access is needed to upload photos to GoHighLevel",
+        "NSPhotoLibraryUsageDescription": "Photo library access is needed to upload images to GoHighLevel",
+        "NSMicrophoneUsageDescription": "Microphone access is needed for voice messages in GoHighLevel",
+        "NSFaceIDUsageDescription": "Face ID is used to quickly and securely unlock the app"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#1a1a2e"
+      },
+      "package": "com.jaywestmarketing.gohighlevel",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.USE_FINGERPRINT"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-screen-orientation",
+        {
+          "initialOrientation": "DEFAULT"
+        }
+      ],
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Allow GoHighLevel to use Face ID for authentication"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentTarget": "15.1"
+          },
+          "android": {
+            "compileSdkVersion": 35,
+            "targetSdkVersion": 35,
+            "minSdkVersion": 24
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

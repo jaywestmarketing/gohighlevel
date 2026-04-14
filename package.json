@@ -1,0 +1,39 @@
+{
+  "name": "gohighlevel-mobile",
+  "version": "1.0.0",
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "build:android:dev": "eas build --platform android --profile development",
+    "build:android:preview": "eas build --platform android --profile preview",
+    "build:android:prod": "eas build --platform android --profile production",
+    "build:ios:dev": "eas build --platform ios --profile development",
+    "build:ios:preview": "eas build --platform ios --profile preview",
+    "build:ios:prod": "eas build --platform ios --profile production",
+    "build:all": "eas build --platform all --profile production",
+    "submit:android": "eas submit --platform android",
+    "submit:ios": "eas submit --platform ios"
+  },
+  "dependencies": {
+    "expo": "~52.0.36",
+    "expo-router": "~4.0.17",
+    "expo-status-bar": "~2.0.1",
+    "expo-screen-orientation": "~8.0.4",
+    "expo-local-authentication": "~14.0.1",
+    "expo-haptics": "~14.0.1",
+    "expo-build-properties": "~0.13.2",
+    "react": "18.3.2",
+    "react-native": "0.76.9",
+    "react-native-webview": "13.12.5",
+    "@react-native-async-storage/async-storage": "2.1.2",
+    "react-native-safe-area-context": "4.12.0",
+    "react-native-screens": "~4.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.0",
+    "@types/react": "~18.3.12",
+    "typescript": "~5.3.3"
+  }
+}
